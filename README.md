@@ -22,23 +22,29 @@ Pytorch  2.0.0
 
 ### Data Preparation
 
-#### Shoes
+#### CIRR
 
-Download the Shoes dataset following the instructions in
-the [**official repository**](https://github.com/XiaoxiaoGuo/fashion-retrieval/tree/master/dataset).
+Download the CIRR dataset following the instructions in the [**official repository**](https://github.com/Cuberick-Orion/CIRR).
 
 After downloading the dataset, ensure that the folder structure matches the following:
 
 ```
-├── Shoes
-│   ├── captions_shoes.json
-│   ├── eval_im_names.txt
-│   ├── relative_captions_shoes.json
-│   ├── train_im_names.txt
-│   ├── [womens_athletic_shoes | womens_boots | ...]
-|   |   ├── [0 | 1]
-|   |   ├── [img_womens_athletic_shoes_375.jpg | descr_womens_athletic_shoes_734.txt | ...]
+├── CIRR
+│   ├── train
+|   |   ├── [0 | 1 | 2 | ...]
+|   |   |   ├── [train-10108-0-img0.png | train-10108-0-img1.png | ...]
 
+│   ├── dev
+|   |   ├── [dev-0-0-img0.png | dev-0-0-img1.png | ...]
+
+│   ├── test1
+|   |   ├── [test1-0-0-img0.png | test1-0-0-img1.png | ...]
+
+│   ├── cirr
+|   |   ├── captions
+|   |   |   ├── cap.rc2.[train | val | test1].json
+|   |   ├── image_splits
+|   |   |   ├── split.rc2.[train | val | test1].json
 ```
 
 #### FashionIQ
@@ -70,46 +76,40 @@ After downloading the dataset, ensure that the folder structure matches the foll
 |   |   ├── [B0000DZQD6.jpg | B000A33FTU.jpg | B000AS2OVA.jpg | ...]
 ```
 
-#### CIRR
+#### Shoes
 
-Download the CIRR dataset following the instructions in the [**official repository**](https://github.com/Cuberick-Orion/CIRR).
+Download the Shoes dataset following the instructions in
+the [**official repository**](https://github.com/XiaoxiaoGuo/fashion-retrieval/tree/master/dataset).
 
 After downloading the dataset, ensure that the folder structure matches the following:
 
 ```
-├── CIRR
-│   ├── train
-|   |   ├── [0 | 1 | 2 | ...]
-|   |   |   ├── [train-10108-0-img0.png | train-10108-0-img1.png | ...]
+├── Shoes
+│   ├── captions_shoes.json
+│   ├── eval_im_names.txt
+│   ├── relative_captions_shoes.json
+│   ├── train_im_names.txt
+│   ├── [womens_athletic_shoes | womens_boots | ...]
+|   |   ├── [0 | 1]
+|   |   ├── [img_womens_athletic_shoes_375.jpg | descr_womens_athletic_shoes_734.txt | ...]
 
-│   ├── dev
-|   |   ├── [dev-0-0-img0.png | dev-0-0-img1.png | ...]
-
-│   ├── test1
-|   |   ├── [test1-0-0-img0.png | test1-0-0-img1.png | ...]
-
-│   ├── cirr
-|   |   ├── captions
-|   |   |   ├── cap.rc2.[train | val | test1].json
-|   |   ├── image_splits
-|   |   |   ├── split.rc2.[train | val | test1].json
 ```
 
 #### Train
 
-Train PAIR on Shoes, FashionIQ, CIRR.
+Train PAIR on CIRR, FashionIQ, Shoes.
 
 ```sh
 python3 train.py 
 --model_dir ... 
---dataset {shoes, fashioniq, cirr}
+--dataset {cirr, fashioniq, shoes}
 --cirr_path ""
 --fashioniq_path ""
 --shoes_path ""
 ```
 
 ```
---dataset <str>                 Dataset to use, options: ['fashioniq', 'shoes', 'cirr']
+--dataset <str>                 Dataset to use, options: ['cirr', 'fashioniq', 'shoes']
 --cirr_path <str>               Path to the CIRR dataset root folder
 --fashioniq_path <str>          Path to the FashionIQ dataset root folder
 --shoes_path <str>              Path to the Shoes dataset root folder
@@ -119,34 +119,7 @@ python3 train.py
 
 </details>
 
-### Inference Phase
-
-#### Validation
-
-Evaluate PAIR on Shoes, FashionIQ, CIRR.
-
-```sh
-python3 evaluation.py 
---model_dir checkpoints/PAIR_{Shoes,FashionIQ,CIRR}.pth 
---dataset {shoes, fashioniq, cirr}
---cirr_path ""
---fashioniq_path ""
---shoes_path ""
-```
-
-```
---dataset <str>                 Dataset to use, options: ['fashioniq', 'shoes', 'cirr']
---cirr_path <str>               Path to the CIRR dataset root folder
---fashioniq_path <str>          Path to the FashionIQ dataset root folder
---shoes_path <str>              Path to the Shoes dataset root folder
---model_dir <str>               Path of the pre-trained model
-```
-
-
-</details>
-
-
-#### Test for CIRR
+### Test Phase
 
 To generate the predictions file for uploading on the [CIRR Evaluation Server](https://cirr.cecs.anu.edu.au/) using the our model, please execute the following command:
 
