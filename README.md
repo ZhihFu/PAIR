@@ -1,4 +1,4 @@
-PAIR: Complementarity-guided Disentanglement for Composed Image Retrieval
+### PAIR: Complementarity-guided Disentanglement for Composed Image Retrieval
 
 
 This is an open-source implementation of the paper "PAIR: Complementarity-guided Disentanglement for Composed Image Retrieval" (**PAIR**).
