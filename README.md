@@ -10,7 +10,7 @@
     &nbsp;&nbsp;
     <strong>Chunxiao Wang</strong>
     &nbsp;&nbsp;
-    <a href="https://xuemengsong.github.io/"><strong>Zhiwei Chen</strong></a>
+    <a href="https://xuemengsong.github.io/"><strong>Xuemeng Song</strong></a>
     &nbsp;&nbsp;
     <strong>Yupeng Hu</strong>
     &nbsp;&nbsp;
