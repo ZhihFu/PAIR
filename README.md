@@ -137,4 +137,6 @@ model_path <str> : Path of the PAIR checkpoint on CIRR, e.g. "checkpoints/PAIR_C
 
 
 ### Acknowledgement
+This codebase is heavily inspired by and built upon [CLIP4cir](https://github.com/ABaldrati/CLIP4Cir).
+
 
