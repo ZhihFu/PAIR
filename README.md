@@ -1,5 +1,28 @@
-### PAIR: Complementarity-guided Disentanglement for Composed Image Retrieval
 
+<p align="center">
+  <h1 align="center">PAIR: Complementarity-guided Disentanglement for Composed Image Retrieval</h1>
+  <p align="center">
+    <a href="https://zhihfu.github.io/"><strong>Zhiheng Fu</strong></a>
+    &nbsp;&nbsp;
+    <a href="https://lee-zixu.github.io/"><strong>Zixu Li</strong></a>
+    &nbsp;&nbsp;
+    <a href="https://zivchen-ty.github.io/"><strong>Zhiwei Chen</strong></a>
+    &nbsp;&nbsp;
+    <strong>Chunxiao Wang</strong>
+    &nbsp;&nbsp;
+    <a href="https://xuemengsong.github.io/"><strong>Zhiwei Chen</strong></a>
+    &nbsp;&nbsp;
+    <strong>Yupeng Hu</strong>
+    &nbsp;&nbsp;
+    <a href="https://liqiangnie.github.io/"><strong>Liqiang Nie</strong></a>
+  </p>
+  <br>
+  <p align="center">
+    <a href="https://ieeexplore.ieee.org/document/10888153"><img alt='Paper' src="https://img.shields.io/badge/Paper-IEEE-green.svg?style=flat-square"></a>
+    <a href="https://zhihfu.github.io/PAIR.github.io/"><img alt='page' src="https://img.shields.io/badge/Project-Website-orange"></a>
+  </p>
+  <br>
+</p>
 
 This is an open-source implementation of the paper "PAIR: Complementarity-guided Disentanglement for Composed Image Retrieval" (**PAIR**).
 
