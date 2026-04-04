@@ -64,14 +64,17 @@
 ### CIR Task Performance
 
 #### CIRR:
+<p align="center">
+  <img src="assets/cirr.png" alt="PAIR_cirr" width="1000">
 <caption><strong>Table 1.</strong> Performance comparison on the CIRR test set in terms of R@K (%) and Rsub@K (%).</caption>
+</p>
 
-*(Insert CIRR results image or table here)*
 
 #### FashionIQ & Shoes:
+<p align="center">
+  <img src="assets/fiqshoes.png" alt="PAIR_fiq" width="1000">
 <caption><strong>Table 2.</strong> Performance comparison on FashionIQ and Shoes validation sets in terms of R@K (%).</caption>
-
-*(Insert FashionIQ and Shoes results image or table here)*
+</p>
 
 [⬆ Back to top](#top)
 
@@ -356,7 +359,22 @@ If you find our work or this code useful in your research, please consider leavi
 [⬆ Back to top](#top)
 
 ---
+## 🫡 Support & Contributing
 
+For any questions, issues, or feedback, please open an [issue](https://github.com/ZhihFu/PAIR/issues) on GitHub or reach out to us at fuzhiheng8@gmail.com
+
+[⬆ Back to top](#top)
+
+---
+
+<div align="center">
+
+**If this project helps you, please leave a Star!**
+
+[![GitHub stars](https://img.shields.io/github/stars/ZhihFu/Air-Know?style=social)](https://github.com/ZhihFu/PAIR)
+
+
+</div>
 
 
 
