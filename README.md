@@ -65,7 +65,7 @@
 
 #### CIRR:
 <p align="center">
-  <img src="assets/cirr.png" alt="PAIR_cirr" width="1000">
+  <img src="assets/cirr.png" alt="PAIR_cirr" width="600"> <br>
 <caption><strong>Table 1.</strong> Performance comparison on the CIRR test set in terms of R@K (%) and Rsub@K (%).</caption>
 </p>
 
