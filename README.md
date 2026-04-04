@@ -348,7 +348,11 @@ For any questions, issues, or feedback, please open an [issue](https://github.co
 [⬆ Back to top](#top)
 
 ---
+## 📄 License
 
+This project is released under the terms of the [LICENSE](./LICENSE) file included in this repository.
+
+---
 <div align="center">
 
 **If this project helps you, please leave a Star!**
