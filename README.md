@@ -1,6 +1,6 @@
 <a id="top"></a>
 <div align="center">
-  <img src="./assets/pair-logo.png" width="600"> 
+  <img src="./assets/logo/pair-logo.png" width="300"> 
   <h1>PAIR: Complementarity-guided Disentanglement for Composed Image Retrieval</h1>
 
   <div>
