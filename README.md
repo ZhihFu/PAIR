@@ -357,7 +357,7 @@ This project is released under the terms of the [LICENSE](./LICENSE) file includ
 
 **If this project helps you, please leave a Star!**
 
-[![GitHub stars](https://img.shields.io/github/stars/ZhihFu/Air-Know?style=social)](https://github.com/ZhihFu/PAIR)
+[![GitHub stars](https://img.shields.io/github/stars/ZhihFu/PAIR?style=social)](https://github.com/ZhihFu/PAIR)
 
 
 </div>
